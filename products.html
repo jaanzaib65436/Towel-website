@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towels Catalog | Jahanzaib Cotton and Towel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <nav class="bg-white border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold text-xl">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <span class="block text-xl font-bold font-serif text-slate-900">Jahanzaib</span>
+                        <span class="block text-xs uppercase tracking-widest font-bold text-teal-600">Cotton & Towel</span>
+                    </div>
+                </a>
+                <div class="flex items-center gap-6 font-medium text-slate-700 text-sm">
+                    <a href="index.html" class="hover:text-teal-600">Home</a>
+                    <a href="products.html" class="text-teal-600 font-bold">Towels Catalog</a>
+                    <a href="contact.html" class="hover:text-teal-600">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h1 class="text-3xl font-serif font-bold text-slate-900">Our Complete Towel Collection</h1>
+            <p class="text-slate-600 text-sm mt-2">Select any item below to calculate total cost and send an instant order directly to WhatsApp <strong>0309-7279372</strong>.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+<div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <img src="alexas_fotos-towels-2822910_1280.jpg" alt="Sheet-Dyed Towel" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox('alexas_fotos-towels-2822910_1280.jpg')">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-bold text-lg text-slate-900">Sheet-Dyed Towels</h3>
+                        <span class="text-lg font-bold text-teal-700">Rs. 700</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Large sheet size in vibrant dyed colors including royal blue, yellow, green, and charcoal stacks.</p>
+                    <button onclick="orderWhatsApp('Sheet-Dyed Towels', 700)" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order via WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <img src="gentelle_linen-towels-1615475_1280.jpg" alt="Bath-Dyed Towels" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox('gentelle_linen-towels-1615475_1280.jpg')">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-bold text-lg text-slate-900">Bath-Dyed Towels</h3>
+                        <span class="text-lg font-bold text-teal-700">Rs. 700</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Plush bath towels available in vibrant red, sage green, pastel pink, and purple shades.</p>
+                    <button onclick="orderWhatsApp('Bath-Dyed Towels', 700)" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order via WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+<div class="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <img src="pexels-bathroom-1281614_1280.jpg" alt="Bath-White Towels" class="w-full h-64 object-cover object-right cursor-pointer" onclick="openLightbox('pexels-bathroom-1281614_1280.jpg')">
+                <div class="p-6 space-y-4">
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-bold text-lg text-slate-900">Bath-White Towels</h3>
+                        <span class="text-lg font-bold text-teal-700">Rs. 500</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Crisp, clean white bath towels suitable for homes, hotels, guest houses, and daily soft use.</p>
+                    <button onclick="orderWhatsApp('Bath-White Towels', 500)" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Order via WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <img id="lightboxImg" src="" alt="Enlarged Towel" class="max-w-full max-h-[85vh] rounded-xl object-contain">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
